@@ -61,8 +61,6 @@ class ConvertingDialogWrapper(
         setAutoAdjustable(false)
         setOKButtonText("Convert")
         setCancelButtonText("Close")
-
-        TitledSeparator("Features")
     }
 
     override fun createCenterPanel(): JComponent =
