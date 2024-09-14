@@ -112,7 +112,7 @@ class ConvertingDialogWrapper(
                 )
             yamlTextEditor.setText(adapter.convert(sourceText))
         } catch (e: Exception) {
-            var errorMessage = e.message
+            var errorMessage = e.localizedMessage
             if (e is JsonIsNotAnObjectException) {
                 errorMessage = "Input string expected to be valid JSON"
             }
