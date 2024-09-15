@@ -2,10 +2,10 @@
 
 # idea-jooas-plugin Changelog
 
-## [1.0.0] - 2024-09
+## [1.0.0] - 2024-09-15
 
-## Added
+### Added
 
-- UI Tool Window
-- Json Object to OpenAPI YAML Schema
-- Converting feature toggles
+- UI Tool Window for visual conversion 
+- Functionality for converting Json Object into OpenAPI YAML Schema
+- Optional feature toggles for the converting functionality

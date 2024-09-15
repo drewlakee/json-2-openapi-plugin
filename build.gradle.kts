@@ -12,7 +12,7 @@ plugins {
 }
 
 group = "io.github.drewlakee"
-version = "1.0.0"
+version = providers.gradleProperty("pluginVersion")
 
 // Set the JVM language level used to build the project.
 kotlin {
