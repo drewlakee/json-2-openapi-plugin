@@ -69,7 +69,10 @@ class ConvertingToolWindow(
     private val clearJsonButton =
         JButton().apply {
             text = "Clear"
-            addActionListener { jsonTextEditor.setText("") }
+            addActionListener {
+                jsonTextEditor.setText("")
+                yamlTextEditor.setText("")
+            }
         }
     private val copySchemaButton =
         JButton().apply {
