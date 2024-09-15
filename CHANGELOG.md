@@ -2,6 +2,10 @@
 
 # idea-jooas-plugin Changelog
 
-## [Unreleased]
-### Added
-- Initial scaffold created from [IntelliJ Platform Plugin Template](https://github.com/JetBrains/intellij-platform-plugin-template)
+## [1.0.0] - 2024-09
+
+## Added
+
+- UI Tool Window
+- Json Object to OpenAPI YAML Schema
+- Converting feature toggles
