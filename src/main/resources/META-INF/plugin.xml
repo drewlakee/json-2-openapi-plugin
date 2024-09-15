@@ -6,9 +6,10 @@
 
     <depends>com.intellij.modules.platform</depends>
 
-    <actions>
-        <action class="io.github.drewlakee.idea.plugin.jooas.OpenJson2OpenapiAction">
-            <add-to-group group-id="ToolsMenu" anchor="last"/>
-        </action>
-    </actions>
+    <extensions defaultExtensionNs="com.intellij">
+        <toolWindow id="Json2OpenApi"
+                    anchor="right"
+                    icon="io.github.drewlakee.idea.plugin.jooas.JooasIcons.toolbarWindow"
+                    factoryClass="io.github.drewlakee.idea.plugin.jooas.ConvertingToolWindowFactory"/>
+    </extensions>
 </idea-plugin>

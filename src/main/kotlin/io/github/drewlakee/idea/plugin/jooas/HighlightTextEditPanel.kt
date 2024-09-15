@@ -1,20 +1,23 @@
 package io.github.drewlakee.idea.plugin.jooas
 
 import com.intellij.lang.Language
+import com.intellij.openapi.editor.event.DocumentEvent
+import com.intellij.openapi.editor.event.DocumentListener
+import com.intellij.openapi.editor.event.MockDocumentEvent
 import com.intellij.openapi.project.Project
 import com.intellij.openapi.ui.VerticalFlowLayout
 import com.intellij.ui.EditorTextField
 import com.intellij.ui.EditorTextFieldProvider
 import com.intellij.ui.components.Label
-import com.intellij.util.ui.UIUtil
 import java.awt.event.HierarchyEvent
 import javax.swing.JPanel
 
 class HighlightTextEditPanel(
     language: Language,
     project: Project,
+    onTextChangeFunction: ((eventSource: EditorTextField) -> Unit)? = null,
 ) : JPanel() {
-    private var textField = editorTextField(language, project)
+    private var textField = editorTextField(language, project, onTextChangeFunction)
 
     init {
         layout =
@@ -32,21 +35,33 @@ class HighlightTextEditPanel(
         textField.text = value
     }
 
+    fun invokeTextChange() {
+        textField.documentChanged(
+            MockDocumentEvent(
+                textField.document,
+                0,
+            ),
+        )
+    }
+
     private fun editorTextField(
         language: Language,
         project: Project,
+        onTextChangeFunction: ((eventSource: EditorTextField) -> Unit)? = null,
     ): EditorTextField =
         EditorTextFieldProvider.getInstance().getEditorField(language, project, emptyList()).apply {
             preferredSize = size
 
-            val backgroundColor = UIUtil.getTableBackground()
-            val brightness = 0.2126 * backgroundColor.red + 0.7152 * backgroundColor.green + 0.0722 * backgroundColor.blue
-            background =
-                if (brightness > 128) {
-                    background.brighter()
-                } else {
-                    background.darker()
-                }
+            val thisTextEditor = this
+            onTextChangeFunction?.let {
+                addDocumentListener(
+                    object : DocumentListener {
+                        override fun documentChanged(event: DocumentEvent) {
+                            it.invoke(thisTextEditor)
+                        }
+                    },
+                )
+            }
 
             addHierarchyListener {
                 if (it.changeFlags and HierarchyEvent.SHOWING_CHANGED.toLong() != 0L && it.changed.isShowing) {
