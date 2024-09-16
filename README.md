@@ -1,11 +1,12 @@
 # Json2OpenAPI
 
 <!-- Plugin description -->
-This plugin exposes a handy functionality in a convenient way for converting Json Object to OpenAPI YAML Schema right in your favorite IDE.
+This plugin provides a convenient feature for converting JSON objects to OpenAPI YAML schemas directly in your preferred IDE.
 
-Supported optional converting features:
-- Example values from source JSON Object in a resulting YAML Schema
-- JSON Strongly Typed Object Deduplication and OpenAPI Schema Referencing
+The plugin supports the following optional conversion features:
+
+- Example values from the source JSON object in the resulting YAML schema
+- JSON strongly typed object deduplication and OpenAPI schema referencing
 
 ![ui-screen.png](ui-screen.png)
 
