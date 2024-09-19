@@ -9,7 +9,7 @@
     <extensions defaultExtensionNs="com.intellij">
         <toolWindow id="Json2OpenAPI"
                     anchor="right"
-                    icon="io.github.drewlakee.idea.plugin.jooas.JooasIcons.toolbarWindow"
-                    factoryClass="io.github.drewlakee.idea.plugin.jooas.ConvertingToolWindowFactory"/>
+                    icon="io.github.drewlakee.plugins.json.openapi.PluginIcons.toolbarWindow"
+                    factoryClass="io.github.drewlakee.plugins.json.openapi.ConvertingToolWindowFactory"/>
     </extensions>
 </idea-plugin>

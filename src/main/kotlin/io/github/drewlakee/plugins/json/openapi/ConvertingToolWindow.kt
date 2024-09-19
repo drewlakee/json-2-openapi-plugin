@@ -1,4 +1,4 @@
-package io.github.drewlakee.idea.plugin.jooas
+package io.github.drewlakee.plugins.json.openapi
 
 import com.intellij.lang.Language
 import com.intellij.openapi.observable.util.whenStateChanged

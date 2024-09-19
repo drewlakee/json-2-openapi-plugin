@@ -1,4 +1,4 @@
-package io.github.drewlakee.idea.plugin.jooas
+package io.github.drewlakee.plugins.json.openapi
 
 import com.intellij.openapi.project.DumbAware
 import com.intellij.openapi.project.Project

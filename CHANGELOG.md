@@ -1,6 +1,6 @@
 <!-- Keep a Changelog guide -> https://keepachangelog.com -->
 
-# idea-jooas-plugin Changelog
+# Changelog
 
 ## [1.0.0] - 2024-09-15
 

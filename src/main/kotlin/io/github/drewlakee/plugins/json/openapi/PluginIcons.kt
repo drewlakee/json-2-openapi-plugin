@@ -1,8 +1,8 @@
-package io.github.drewlakee.idea.plugin.jooas
+package io.github.drewlakee.plugins.json.openapi
 
 import com.intellij.openapi.util.IconLoader
 
-object JooasIcons {
+object PluginIcons {
     @JvmField
     val toolbarWindow = IconLoader.getIcon("/icons/swagger-icon.svg", javaClass)
 }
