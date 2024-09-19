@@ -6,9 +6,8 @@ This plugin provides a useful feature for converting JSON objects into OpenAPI Y
 The plugin offers the following optional conversion options:
 
 - Inclusion of example values from the original JSON object in the generated YAML schema
-- Removal of duplicate JSON objects and reference to OpenAPI schemas
-
-![ui-screen.png](ui-screen.png)
+- Detection of structured duplicate JSON objects and reference to OpenAPI schemas
 
 <!-- Plugin description end -->
 
+![ui-screen.png](ui-screen.png)
