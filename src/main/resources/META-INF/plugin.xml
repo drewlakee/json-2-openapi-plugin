@@ -1,6 +1,6 @@
 <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
-    <id>io.github.drewlakee.idea.plugin.jooas</id>
+    <id>io.github.drewlakee.plugins.json.openapi</id>
     <name>Json2OpenAPI</name>
     <vendor>drewlakee</vendor>
 
