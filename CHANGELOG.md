@@ -8,4 +8,4 @@
 
 - UI Tool Window for visual conversion 
 - Functionality for converting Json Object into OpenAPI YAML Schema
-- Optional feature toggles for the converting functionality
+- Optional feature toggles for the functionality
