@@ -8,7 +8,7 @@ import com.intellij.openapi.project.Project
 import com.intellij.openapi.ui.VerticalFlowLayout
 import com.intellij.ui.EditorTextField
 import com.intellij.ui.EditorTextFieldProvider
-import com.intellij.ui.components.Label
+import com.intellij.ui.components.JBLabel
 import java.awt.event.HierarchyEvent
 import javax.swing.JPanel
 
@@ -25,7 +25,7 @@ class HighlightTextEditPanel(
                 verticalFill = true
                 horizontalFill = true
             }
-        add(Label(language.displayName))
+        add(JBLabel(language.displayName))
         add(textField)
     }
 

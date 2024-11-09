@@ -4,6 +4,13 @@
 
 ## [Unreleased]
 
+## [1.0.1] - 2024-11-09
+
+### Changed
+
+- Extended plugin's until-build up to unlimited compatible version of IDEA
+- Replaced UI components due to deprecated signatures for further IDEA versions compatibility
+
 ## [1.0.0] - 2024-09-15
 
 ### Added
