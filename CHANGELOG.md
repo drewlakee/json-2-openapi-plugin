@@ -4,6 +4,12 @@
 
 ## [Unreleased]
 
+## [1.0.1] - 2024-11-09
+
+### Added
+
+- Extended plugin's until-build up to unlimited compatible version of IDEA
+
 ## [1.0.0] - 2024-09-15
 
 ### Added

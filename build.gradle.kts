@@ -123,6 +123,12 @@ kover {
 }
 
 tasks {
+
+    patchPluginXml {
+        // until an upcoming IDEA version is compatible with the plugin
+        untilBuild = provider { null }
+    }
+
     wrapper {
         gradleVersion = providers.gradleProperty("gradleVersion").get()
     }
