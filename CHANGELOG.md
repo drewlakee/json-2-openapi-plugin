@@ -4,6 +4,12 @@
 
 ## [Unreleased]
 
+## [1.0.2] - 2024-11-11
+
+### Changed
+
+- Updated converter library 1.0.2 -> 1.0.3 with bug fixes
+
 ## [1.0.1] - 2024-11-09
 
 ### Changed
